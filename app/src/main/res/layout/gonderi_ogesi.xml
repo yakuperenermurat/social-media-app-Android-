@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profil_resmi_Gonderi_Ogesi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/txt_kullaniciadi_Gonderi_Ogesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcı Adı"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gonderi_resmi_Gonderi_Ogesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gonderi_resmi_Gonderi_Ogesi"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/begeni_Gonderi_Ogesi"
+                android:src="@drawable/ic_begeni"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:id="@+id/yorum_Gonderi_Ogesi"
+                android:src="@drawable/ic_yorum"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@id/begeni_Gonderi_Ogesi"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:id="@+id/kaydet_Gonderi_Ogesi"
+                android:src="@drawable/ic_kaydet_siyah"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_begeniler_Gonderi_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="beğeniler"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/txt_gonderen_Gonderi_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gönderen"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/txt_gonderiHakkinda_Gonderi_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gönderi hakkında"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/txt_yorum_Gonderi_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yorumlar"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

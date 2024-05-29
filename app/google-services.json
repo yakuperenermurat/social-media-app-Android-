@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "162225339267",
+    "project_id": "my-project-4dddb",
+    "storage_bucket": "my-project-4dddb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162225339267:android:73ff13ddbc3566fee614b6",
+        "android_client_info": {
+          "package_name": "com.example.nstagram"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3HIdUSbAFT2dDjpTLl69_KljwKQtYXuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfilDuzenleActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_profilDuzenleActivity"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_profilDuzenleActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/kapat_resmi_profilDuzenleActivity"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_kapat"/>
+                <TextView
+                    android:text="Profil Düzenle"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@+id/kapat_resmi_profilDuzenleActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txt_kaydet_profilDuzenleActivity"
+                        android:text="KAYDET"
+                        android:textSize="16sp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profil_resmi_profilDuzenleActivity"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="85dp"
+            android:layout_height="85dp"/>
+        <TextView
+            android:id="@+id/txt_fotograf_degistir_profilDuzenleActivity"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Fotoğrafı Değiştir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!-- Ad için TextInputLayout ve TextInputEditText -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/material_edt_text_Ad_profilDuzenleActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adınız..."/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Kullanıcı Adı için TextInputLayout ve TextInputEditText -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/material_edt_text_KullaniciAdi_profilDuzenleActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kullanıcı adınız..."/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Biyografi için TextInputLayout ve TextInputEditText -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/material_edt_text_Biyografi_profilDuzenleActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Biyografiniz..."/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>
